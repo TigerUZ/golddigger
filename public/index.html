@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Gold Digger</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="app">
+
+  <header>
+    <img id="avatar" src="" alt="Avatar">
+    
+    <div id="header-center">
+      <span id="score">TOTAL SCORE 0</span>
+      <span id="best-score-label" hidden>
+        Ваш лучший результат: <span id="best-score">0</span>
+      </span>
+    </div>
+    <button id="settings" disabled>⚙️</button>
+  </header>
+
+  <main>
+    
+    <div id="home-screen">
+      <button id="play-btn">Play</button>
+      <div id="home-status">
+        <div id="lives"></div>
+        <div id="energy-bar">
+          <div id="energy-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="game-screen" hidden>
+      <div id="game-field"></div>
+      <div id="timer-bar">
+        <div id="timer-fill"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <button id="nav-home" class="active">Home</button>
+    <button id="nav-earnings" disabled>Earnings</button>
+    <button id="nav-friends" disabled>Friends</button>
+    <button id="nav-wallet" disabled>Wallet</button>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
